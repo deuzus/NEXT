@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
   <Link href="https://www.deuzus.com">
     <a>Project I am working on</a>
   </Link>
-  </h1>
+ </h1>
   <h2 className="title">
    The {' '}
   <Link href="https://www.amy.gr">
@@ -33,6 +33,12 @@ export default function Home({ allPostsData }) {
     <a>this</a>
   </Link>
 </h3>
+<h5 className="title">
+  Click{' '}
+  <Link href="/posts/first-post">
+    <a>This</a>
+  </Link>
+</h5>
         <h4 className={utilStyles.headingLg}>Blog</h4>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
